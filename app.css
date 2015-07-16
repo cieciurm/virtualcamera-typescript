@@ -1,0 +1,38 @@
+﻿body {
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+h1 {
+    color: brown;
+    font-size: 300%;
+    margin: 0;
+}
+
+#navigation {
+    margin: auto;
+}
+
+h2 {
+    margin: 0;
+}
+
+fieldset {
+    border: 1px dashed #000000;
+    margin-bottom: 5px;
+}
+
+fieldset > legend {
+    font-weight: bold;
+}
+
+#myCanvas {
+    float: left;
+    clear: both;
+    border: 1px solid #000000;
+    background-color: white;
+}
+
+fieldset {
+    width: auto;
+    float: left;
+}

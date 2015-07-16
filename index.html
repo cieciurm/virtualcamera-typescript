@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Wirtualna kamera</title>
+    <link href="http://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <script src="struct.js"></script>
+    <script src="drawing.js"></script>
+    <script src="projection.js"></script>
+    <script src="sorting.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1>Grafika komputera - Wirtualna kamera + eliminacja elementów zasłoniętych</h1>
+    <h2>Mateusz Cieciura, 234337</h2>
+
+    <div id="container">
+        <div id="navigation">
+            <fieldset>
+                <legend>Zoom</legend>
+                <button id="zoom-in">+</button>
+                <button id="zoom-out">-</button>
+            </fieldset>
+
+            <fieldset>
+                <legend>Translacja</legend>
+                <fieldset>
+                    <legend>OX</legend>
+                    <button id="left">&#8656;</button>
+                    <button id="right">&#8658;</button>
+                </fieldset>
+                <fieldset>
+                    <legend>OY</legend>
+                    <button id="up">&#8657;</button>
+                    <button id="down">&#8659;</button>
+                </fieldset>
+                <fieldset>
+                    <legend>OZ</legend>
+                    <button id="deep">&#8598;</button>
+                    <button id="shallow">&#8600;</button>
+                </fieldset>
+            </fieldset>
+            <fieldset>
+                <legend>Rotacja</legend>
+                <fieldset>
+                    <legend>OX</legend>
+                    <button id="rot-ox-plus">&#8657;</button>
+                    <button id="rot-ox-minus">&#8659;</button>
+                </fieldset>
+                <fieldset>
+                    <legend>OY</legend>
+                    <button id="rot-oy-plus">&#8656;</button>
+                    <button id="rot-oy-minus">&#8658;</button>
+                </fieldset>
+                <fieldset>
+                    <legend>OZ</legend>
+                    <button id="rot-oz-plus">&#8630;</button>
+                    <button id="rot-oz-minus">&#8631;</button>
+                </fieldset>
+            </fieldset>
+            <fieldset>
+                <legend>Siatka</legend>
+                <input type="checkbox" id="grid" />
+            </fieldset>
+
+        </div>
+
+        <canvas id="myCanvas" width="800" height="600">
+            Your browser does not support the HTML5 canvas tag.
+        </canvas>
+    </div>
+</body>
+</html>
