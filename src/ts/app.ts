@@ -1,10 +1,7 @@
-﻿/// <reference path="sorting.ts" />
-
-import Point3D = Struct.Point3D;
-import Face = Struct.Face;
-import Cuboid = Struct.Cuboid;
-import CameraProjector = Projection.CameraProjector;
-import Drawer = Drawing.Drawer;
+﻿import { Point3D, Face, Cuboid } from "./struct";
+import { CameraProjector } from "./projection";
+import { Drawer } from "./drawing";
+import { compare } from "./sorting";
 
 window.onload = () => {
     var canvas: any = document.getElementById("myCanvas"),
@@ -170,7 +167,7 @@ function drawScene(canvas : HTMLCanvasElement, cuboids: Cuboid[], projector: Cam
                             + faces[j].points[2].z + faces[j].points[3].z) / 4;
     }
 
-    faces.sort(Sorting.compare);
+    faces.sort(compare);
 
     drawer.clearScreen();
     var showGrid = <HTMLInputElement>document.getElementById("grid");
